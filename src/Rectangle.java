@@ -23,8 +23,12 @@ Rectangle without Encapsulation
 
   // property in this class
   private double width;
-  private double height;
-  String name;
+  private double height; // this access can use just within this class
+  protected String name; // this access can use within this class, packege and subclass
+
+  // i.e. access modifier
+  // String name --> this access is a "no modifier" it can use within this class and pakege
+  // public String name --> this access can use around the world
 
   // default constructor
   public Rectangle () {
